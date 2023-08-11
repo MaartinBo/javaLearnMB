@@ -15,6 +15,7 @@ public class LoopsCheck {
             int temp = lottoNumber[i]; // dla i=0 1 i=1 3
             lottoNumber[i] = lottoNumber[lottoNumber.length-1-i];; //4 ->0 3=>7
             lottoNumber[lottoNumber.length-1-i] = temp; // 1 // numbers[3] =3
+            System.out.println("Iteracja numer " + i);
         }
         for (int i=0; i < lottoNumber.length; i++){
             System.out.println(lottoNumber[i]);

@@ -1,33 +1,20 @@
-import java.util.Scanner;
-
+// stworz nową klase która będzie sie nazywać kalkulator, ta klasa ma posaidać 5 metod, 1 metoda = operacja matematyczna, każda ma zwracać inta
 public class Calculator {
-    // napisz program który poprosi użytkownika o 2 liczby, a następnie wykonana na nich podstawowe operacje matematyczne
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Prosze, podaj pierwsza liczbe");
-        int firstNumber = scanner.nextInt();
-        System.out.println("Prosze, podaj drugą liczbe");
-        int secondNumber = scanner.nextInt();
 
-        // 1 rozwiazanie
-//        System.out.println("Wynik dodawania obydwu liczb to "  + (firstNumber+secondNumber));
-//        System.out.println("Wynik odejmowania obydwu liczb to" + (firstNumber-secondNumber));
-//        System.out.println("Wynik mnożenia  obydwu liczb to "  + (firstNumber*secondNumber));
-//        System.out.println("Wynik dzielenia obydwu liczb to "  + (firstNumber/secondNumber));
-
-        // 2 rozwiazanie
-
-        int addition = firstNumber + secondNumber;
-        int subtraction = firstNumber - secondNumber;
-        int multiplication = firstNumber * secondNumber;
-        float division = firstNumber/secondNumber;
-        int mod = firstNumber%secondNumber;
-
-        System.out.println("Wynik dodawania: " + addition);
-        System.out.println("Odejmowanie: " + subtraction);
-        System.out.println("Mnożenie: " + multiplication);
-        System.out.println("Dzielenie: " + division);
-        System.out.println("Modulo: " + mod);
-
+    public int add(int firstNumber, int secondNumber){
+        System.out.println("Suma to: ");
+        return firstNumber + secondNumber;
+    }
+    public int subtraction(int firstNumber, int secondNumber){
+        return firstNumber - secondNumber;
+    }
+    public int multiplication(int firstNumber, int secondNumber){
+        return firstNumber * secondNumber;
+    }
+    public int division(int firstNumber, int secondNumber){
+        return firstNumber / secondNumber;
+    }
+    public float mod(int firstNumber, int secondNumber){
+        return firstNumber % secondNumber;
     }
 }
