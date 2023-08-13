@@ -7,6 +7,12 @@ public class MathTeacher extends Person {
         this.school = school;
     }
 
+    public void walk(){
+        super.walk();
+        System.out.println("I walk very fast");
+        //  method overwriting przesłoniecie działanie metody z klasy bazowej w klasie potmonej
+    }
+
     public void teachMath(){
         System.out.println("I am teaching Math!");
     }
